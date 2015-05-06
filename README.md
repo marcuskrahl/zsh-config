@@ -20,3 +20,5 @@ The repository comes with a default .zshrc so there is no need to run the initia
 
     mv ~/.zshrc ~/.zshrc.old
     ln -s ~/zsh-config/zshrc ~/.zshrc
+    mv ~/.zprofile ~/.zprofile.old
+    ln -s ~/zsh-config/zprofile ~/.zprofile
