@@ -6,7 +6,7 @@ A customized zsh config
 
 On Arch Linux run the following command to install zsh and some additional dependencies:
 
-    sudo pacman -S zsh pkgfile
+    sudo pacman -S zsh pkgfile keychain
     sudo pkgfile -u
 
 
