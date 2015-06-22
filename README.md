@@ -22,3 +22,4 @@ The repository comes with a default .zshrc so there is no need to run the initia
     ln -s ~/zsh-config/zshrc ~/.zshrc
     mv ~/.zprofile ~/.zprofile.old
     ln -s ~/zsh-config/zprofile ~/.zprofile
+    ln -s ~/zsh-config/completions ~/.zsh-completions
