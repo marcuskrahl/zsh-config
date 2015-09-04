@@ -111,4 +111,4 @@ PROMPT="%B%F{105}%n%f%b on %B%F{203}%m%f%b at %B%F{223}%~%f%b  ${vcs_info_msg_0_
 %B%#%b "
 
 
-~/zsh-config/systeminfo.sh
+systeminfo
