@@ -1,6 +1,6 @@
 # Startup programs
 
-pulseaudio --start & 
+pulseaudio --start 
 
 [ ! -s ~/.mpd/mpd.pid ] && mpd
 
