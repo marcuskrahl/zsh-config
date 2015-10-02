@@ -1,5 +1,7 @@
 # Startup programs
 
+pulseaudio --start & 
+
 [ ! -s ~/.mpd/mpd.pid ] && mpd
 
 [ -s "/home/marcus/.k/kvm/kvm.sh" ] && . "/home/marcus/.k/kvm/kvm.sh" # Load kvm
