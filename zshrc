@@ -99,7 +99,12 @@ bindkey '^[^[[D'      cdUndoKey
 
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git*' formats "%[%s%] %c %u "
+zstyle ':vcs_info:*' check-for-staged-changes true
+zstyle ':vcs_info:*' stagedstr "%F{76}*%f"
+zstyle ':vcs_info:*' unstagedstr "%F{196}*%f"
+
+zstyle ':vcs_info:git*' formats "%B %s %r(%b%c%u) %%b"
+zstyle ':vcs_info:git*' formats "%B %s %r(%b%c%u %%F{196}%a%%f) %%b"
 
 precmd() {
     vcs_info
@@ -107,8 +112,10 @@ precmd() {
 
 
 setopt prompt_subst
-PROMPT="%B%F{105}%n%f%b on %B%F{203}%m%f%b at %B%F{223}%~%f%b  ${vcs_info_msg_0_} [%?] 
-%B%#%b "
+PROMPT='%B%F{105}%n%f%b on %B%F{203}%m%f%b at %B%F{223}%~%f%b ${vcs_info_msg_0_} [%?] 
+%B%#%b '
 
 
 systeminfo
+
+[ -s "/home/marcus/.dnx/dnvm/dnvm.sh" ] && . "/home/marcus/.dnx/dnvm/dnvm.sh" # Load dnvm
